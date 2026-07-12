@@ -233,7 +233,7 @@ a {
 
 /* Hero Section */
 .hero-section {
-    padding: 60px 0 100px 0;
+    padding: 60px 0 140px 0;
     position: relative;
 }
 
@@ -416,10 +416,9 @@ a {
 
 /* Features Section */
 .features-section {
-    padding: 100px 0;
+    padding: 100px 0 140px 0;
     background-color: var(--white);
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
+    position: relative;
 }
 
 .features-grid {
@@ -1191,4 +1190,56 @@ a {
 
 .modal-close:hover {
     color: var(--primary-color);
+}
+
+/* Custom Wavy Decorations & SVG Icon Styles */
+.wavy-bg-pattern {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="30" viewBox="0 0 80 30"><path d="M0 15 Q 20 5, 40 15 T 80 15" fill="none" stroke="%23ec5f20" stroke-width="1.2" opacity="0.06"/><path d="M0 25 Q 20 15, 40 25 T 80 25" fill="none" stroke="%23f89e1b" stroke-width="1" opacity="0.04"/></svg>');
+    background-repeat: repeat;
+}
+
+.wave-container {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    line-height: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.wave-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Feature Card SVG Icons */
+.feature-icon-svg {
+    background: var(--primary-light);
+    color: var(--primary-color);
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    padding: 14px;
+    box-shadow: 0 8px 16px rgba(236, 95, 32, 0.08);
+    transition: var(--transition);
+}
+
+.feature-card:hover .feature-icon-svg {
+    background: var(--primary-gradient);
+    color: var(--white);
+    transform: scale(1.05) rotate(5deg);
+    box-shadow: 0 12px 24px rgba(236, 95, 32, 0.25);
+}
+
+.svg-feat {
+    width: 100%;
+    height: 100%;
+    transition: var(--transition);
 }

@@ -20,7 +20,18 @@
     <header class="header">
         <div class="container navbar">
             <a href="#" class="logo">
-                <span class="logo-icon"><i class="fa-solid fa-mug-hot"></i></span>
+                <span class="logo-icon-svg" style="display: flex; align-items: center;">
+                    <svg class="svg-logo" viewBox="0 0 100 100" width="38" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="50" cy="50" rx="40" ry="28" transform="rotate(-30 50 50)" fill="url(#logo-grad)" />
+                        <path d="M22 68C38 60 45 42 78 32" stroke="#FAF8F5" stroke-width="4" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#F89E1B" />
+                                <stop offset="100%" stop-color="#EC5F20" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </span>
                 <span class="logo-text">CORIO COFFEE</span>
             </a>
             <nav class="nav-menu">
@@ -50,7 +61,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section wavy-bg-pattern">
         <div class="container hero-grid">
             <div class="hero-content">
                 <span class="badge">Taste of Innovation</span>
@@ -85,6 +96,12 @@
                 </div>
             </div>
         </div>
+        <!-- Wave Divider at bottom of Hero -->
+        <div class="wave-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none" class="wave-svg">
+                <path d="M0,64 C288,128 576,0 864,64 C1152,128 1440,32 1440,32 L1440,120 L0,120 Z" fill="#FFFFFF"></path>
+            </svg>
+        </div>
     </section>
 
     <!-- 3-Second Advantage Section -->
@@ -98,23 +115,53 @@
             <div class="features-grid">
                 <!-- Card 1 -->
                 <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-snowflake"></i></div>
-                    <h3>Công Nghệ Sấy Lạnh Đông Khô</h3>
-                    <p>Khác biệt hoàn toàn với cà phê sấy phun thông thường. Tinh thể sấy lạnh giữ lại trọn vẹn 99% hương vị tự nhiên của Robusta mà không bị đắng cháy do nhiệt.</p>
+                    <div class="feature-icon-svg">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-feat">
+                            <line x1="32" y1="8" x2="32" y2="56" />
+                            <line x1="8" y1="32" x2="56" y2="32" />
+                            <line x1="15" y1="15" x2="49" y2="49" />
+                            <line x1="15" y1="49" x2="49" y2="15" />
+                            <circle cx="32" cy="32" r="6" fill="currentColor" />
+                            <path d="M32 16l-4-4 4-4 4 4z M32 48l-4 4 4 4 4-4z M16 32l-4-4-4 4 4 4z M48 32l-4-4-4 4 4 4z" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h3>Công Nghệ Sấy Đông Khô</h3>
+                    <p>Tinh thể sấy lạnh giữ lại trọn vẹn 99% hương vị tự nhiên của Robusta mà không bị đắng cháy do nhiệt độ cao như sấy phun.</p>
                 </div>
                 <!-- Card 2 -->
                 <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <div class="feature-icon-svg">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-feat">
+                            <path d="M32 4C18 20 12 36 12 44a20 20 0 0 0 40 0C52 36 46 20 32 4z" />
+                            <circle cx="24" cy="44" r="2.5" fill="currentColor" />
+                            <circle cx="40" cy="38" r="3.5" fill="currentColor" />
+                            <circle cx="32" cy="50" r="2" fill="currentColor" />
+                            <path d="M32 20c-2 4-2 8 0 12" stroke-dasharray="2 2" />
+                        </svg>
+                    </div>
                     <h3>Tan Tức Thì Trong 3 Giây</h3>
-                    <p>Khả năng hòa tan siêu tốc ngay cả trong nước lạnh, sữa tươi lạnh hay nước dừa. Không cần nước nóng, không cần phin lọc hay máy pha phức tạp.</p>
+                    <p>Khả năng hòa tan siêu tốc ngay cả trong nước dừa, sữa tươi lạnh hay nước đá. Không cần phin lọc, không cần nước nóng phức tạp.</p>
                 </div>
                 <!-- Card 3 -->
                 <div class="feature-card">
-                    <div class="feature-icon"><i class="fa-solid fa-box-open"></i></div>
+                    <div class="feature-icon-svg">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-feat">
+                            <path d="M32 6L6 18l26 12 26-12L32 6z" />
+                            <path d="M6 18v28l26 12V30L6 18z" />
+                            <path d="M58 18v28L32 58V30l26-12z" />
+                            <path d="M32 38c4-4 10-4 12 2-2 2-8 2-12-2z" fill="currentColor" opacity="0.4" />
+                        </svg>
+                    </div>
                     <h3>Bao Bì Hộp Giấy Thân Thiện</h3>
-                    <p>Thiết kế hộp giấy kraft tự nhiên sang trọng, bên trong gồm các túi stick nhỏ định lượng chính xác chống ẩm tuyệt đối, tái chế xanh thân thiện với môi trường.</p>
+                    <p>Thiết kế hộp giấy Kraft bảo vệ môi trường, đóng gói dạng stick nhỏ chống ẩm tuyệt đối, thuận tiện mang theo và tái chế tuần hoàn.</p>
                 </div>
             </div>
+        </div>
+        <!-- Wave Divider at bottom of Features -->
+        <div class="wave-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none" class="wave-svg">
+                <path d="M0,64 C288,128 576,0 864,64 C1152,128 1440,32 1440,32 L1440,120 L0,120 Z" fill="#FAF8F5"></path>
+            </svg>
         </div>
     </section>
 
@@ -310,7 +357,18 @@
         <div class="container footer-grid">
             <div class="footer-brand">
                 <a href="#" class="logo text-white">
-                    <span class="logo-icon"><i class="fa-solid fa-mug-hot text-white"></i></span>
+                    <span class="logo-icon-svg" style="display: flex; align-items: center;">
+                        <svg class="svg-logo" viewBox="0 0 100 100" width="38" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="50" cy="50" rx="40" ry="28" transform="rotate(-30 50 50)" fill="url(#logo-grad-footer)" />
+                            <path d="M22 68C38 60 45 42 78 32" stroke="#FAF8F5" stroke-width="4" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="logo-grad-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#F89E1B" />
+                                    <stop offset="100%" stop-color="#EC5F20" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </span>
                     <span class="logo-text text-white">CORIO COFFEE</span>
                 </a>
                 <p>Taste of Innovation - Khởi tạo ngày mới tràn đầy năng lượng đột phá.</p>
