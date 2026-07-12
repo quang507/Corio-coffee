@@ -8,7 +8,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
@@ -343,6 +343,44 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lead Popup Modal -->
+    <div class="modal" id="leadModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <form class="checkout-form" id="modalForm">
+                <h3 class="form-title" id="modalFormTitle">Đăng Ký Đặt Hàng</h3>
+                <input type="hidden" id="modalFormType" value="order">
+                <div class="form-group">
+                    <label for="modalName">Họ và tên *</label>
+                    <input type="text" id="modalName" required placeholder="Nhập họ tên của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="modalPhone">Số điện thoại *</label>
+                    <input type="tel" id="modalPhone" required placeholder="Số điện thoại nhận hàng">
+                </div>
+                <div class="form-group" id="modalProductGroup">
+                    <label for="modalProduct">Lựa chọn combo *</label>
+                    <select id="modalProduct" required>
+                        <option value="combo-1">1 Hộp Latte Dừa hoặc Cà phê Muối 12 gói (65.000đ)</option>
+                        <option value="combo-2">1 Hộp Cà phê Sữa 18 gói hoặc Home Espresso 21 gói (75.000đ - 95.000đ)</option>
+                        <option value="combo-3">Combo 2 Hộp Tùy Chọn (130.000đ - 170.000đ - Tặng ly thủy tinh)</option>
+                        <option value="combo-4">Combo Trải Nghiệm Toàn Diện 4 Hộp (290.000đ - Tặng ly + Freeship)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modalAddress">Địa chỉ giao nhận *</label>
+                    <textarea id="modalAddress" required placeholder="Số nhà, tên đường, phường/xã, quận/huyện..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary btn-full btn-lg">Gửi Đăng Ký (COD toàn quốc)</button>
+            </form>
+            <div class="form-success" id="modalSuccess" style="position: static; display: none;">
+                <i class="fa-solid fa-circle-check success-icon"></i>
+                <h3>Đăng ký thành công!</h3>
+                <p>Chúng tôi đã tiếp nhận thông tin và sẽ liên hệ xác nhận trong vòng 15 phút.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Custom JS -->
     <script src="script.js"></script>
